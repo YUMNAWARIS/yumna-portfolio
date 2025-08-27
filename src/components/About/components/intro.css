@@ -1,0 +1,103 @@
+.intro-hero {
+    position: relative;
+    padding: 0 0;
+    margin-bottom: 50px;
+    color: var(--text);
+}
+
+.intro-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(24px, 5vw, 64px);
+    align-items: center;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    color: var(--medium-mute);
+    margin: 0 0 8px;
+}
+
+.intro-kicker {
+    display: block;
+    font-weight: 500;
+    font-size: clamp(12px, 1.6vw, 14px);
+    color: var(--medium-mute);
+    margin-top: 6px;
+}
+
+.intro-lead {
+    font-size: clamp(15px, 1.7vw, 18px);
+    line-height: 1.7;
+    margin: 8px 0 8px;
+    color: var(--text);
+}
+
+.intro-body {
+    color: var(--medium-mute);
+    line-height: 1.75;
+    margin: 0 0 14px;
+}
+
+.intro-now-next {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 18px;
+}
+
+.intro-now-next li {
+    display: flex;
+    gap: 10px;
+    padding: 6px 0;
+    color: var(--text);
+}
+
+.intro-now-next li span {
+    min-width: 64px;
+    font-weight: 700;
+    color: var(--accent-2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.76rem;
+}
+
+.intro-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chip {
+    padding: 8px 12px;
+    background: var(--chip-bg);
+    border: 1px solid var(--chip-br);
+    border-radius: 999px;
+    font-size: 0.86rem;
+    color: var(--medium-mute);
+    backdrop-filter: blur(2px);
+}
+
+.intro-art img {
+    width: 400px !important;
+    height: auto !important;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .intro-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-art {
+        order: -1;
+    }
+
+    /* image on top for mobile */
+}

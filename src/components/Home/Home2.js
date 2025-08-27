@@ -19,9 +19,6 @@ function Home2() {
           </Col>
           <Col md={1}></Col>
           <Col md={7} className="home-about-description">
-            {/* <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1> */}
 
             <p className="home-about-body">
               I’m <strong>Yumna Waris</strong>, a <strong>Software Engineer II</strong> at

@@ -8,12 +8,9 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
-  AiOutlineHome,
+
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiFillAliwangwang,
-  AiFillExperiment,
   AiOutlineSketch,
 } from "react-icons/ai";
 
@@ -71,7 +68,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Profile & Journey
               </Nav.Link>
             </Nav.Item>
 

@@ -9,6 +9,9 @@ html {
 
   --imp-text-color: #c770f0;
 
+  --chip-bg: rgba(255, 255, 255, 0.06);
+  --chip-br: rgba(255, 255, 255, 0.12);
+
 }
 
 /* ===== Theme tokens ===== */
@@ -20,6 +23,8 @@ html {
   --card-bg-2: rgba(255, 255, 255, .02);
   --text: #24245f;
   --muted: #898b8c;
+  --medium-mute: #d1c6d8;
+  
 }
 
 .purple {
