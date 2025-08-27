@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { FiMail, FiPhone, FiGithub, FiLinkedin, FiTwitter, FiGlobe, FiCheck, FiCopy, FiSend } from "react-icons/fi";
+import { FiMail, FiPhone, FiGithub, FiLinkedin, FiTwitter, FiGlobe, FiCheck, FiCopy, FiSend, FiX } from "react-icons/fi";
 import { SiMedium, SiKaggle, SiInstagram, SiFacebook, SiCoursera, SiUdemy } from "react-icons/si";
 import "./contact.css"
 
@@ -10,17 +10,19 @@ export default function ContactSection() {
     const phone = "+92 335 6910909";
 
     const socials = [
-        { name: "GitHub", url: "https://github.com/yourhandle", icon: FiGithub },
-        { name: "LinkedIn", url: "https://www.linkedin.com/in/yourhandle/", icon: FiLinkedin },
-        { name: "Medium", url: "https://medium.com/@yourhandle", icon: SiMedium },
-        { name: "Kaggle", url: "https://kaggle.com/yourhandle", icon: SiKaggle },
-        { name: "X (Twitter)", url: "https://twitter.com/yourhandle", icon: FiTwitter },
-        { name: "Instagram", url: "https://instagram.com/yourhandle", icon: SiInstagram },
-        { name: "Facebook", url: "https://facebook.com/yourhandle", icon: SiFacebook },
-        { name: "Coursera", url: "https://coursera.org/user/yourhandle", icon: SiCoursera },
-        { name: "Udemy", url: "https://udemy.com/user/yourhandle", icon: SiUdemy },
-        { name: "Website", url: "https://your-site.com", icon: FiGlobe },
-    ];
+            { name: "GitHub", url: "https://github.com/yumnawaris", icon: FiGithub },
+            { name: "Kaggle", url: "https://kaggle.com/yumnawaris", icon: SiKaggle },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/yumna-waris-8416451a5/", icon: FiLinkedin },
+            { name: "Medium", url: "https://medium.com/@yumnaahwaris", icon: SiMedium },
+    
+            { name: "Coursera", url: "https://www.coursera.org/user/85a7da3566159e08061efacef9258118", icon: SiCoursera },
+            { name: "Udemy", url: "https://www.udemy.com/user/yumna-waris/", icon: SiUdemy },
+    
+            { name: "Facebook", url: "https://www.facebook.com/yumna.waris.16", icon: SiFacebook },
+            { name: "Instagram", url: "https://www.instagram.com/yumna_waris/", icon: SiInstagram },
+            { name: "X", url: "https://x.com/waris_yumna", icon: FiX },
+    
+        ]
 
     const copy = async (text, key) => {
         try {
