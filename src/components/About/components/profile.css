@@ -1,0 +1,132 @@
+/* sticky + container */
+.profile-nav {
+    position: sticky;
+    top: 12px;
+    z-index: 1030;
+}
+
+/* glass bar container */
+.profile-navbar {
+    position: relative;
+    margin: 0 auto 12px;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* buttons */
+.profile-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: rgba(230, 228, 255, 0.86);
+    transition: background-color .2s ease, color .2s ease, transform .08s ease;
+}
+
+.profile-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.profile-btn.is-active {
+    color: #0b0b0b;
+    background: linear-gradient(90deg, #8e7cff, #00d4ff);
+    box-shadow: 0 0 0 .15rem rgba(0, 212, 255, 0.35);
+}
+
+.profile-ico {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.profile-label {
+    white-space: nowrap;
+}
+
+/* desktop shows full row; mobile shows compact */
+.profile-desktop {
+    display: flex;
+}
+
+.profile-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .profile-desktop {
+        display: none;
+    }
+
+    .profile-mobile {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+/* three-dot menu */
+.profile-more.is-open {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.profile-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1040;
+}
+
+.profile-menu {
+    position: absolute;
+    z-index: 1041;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 520px;
+    padding: 8px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(22, 22, 28, 0.95);
+    backdrop-filter: blur(8px);
+    display: grid;
+    gap: 8px;
+}
+
+.profile-menu-item {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(230, 228, 255, 0.92);
+    text-align: left;
+    font-weight: 600;
+}
+
+.profile-menu-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.profile-menu-item.is-active {
+    color: #0b0b0b;
+    background: linear-gradient(90deg, #8e7cff, #00d4ff);
+}
