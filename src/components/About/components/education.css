@@ -1,0 +1,213 @@
+/* --- make Bootstrap cards transparent inside Education --- */
+.education-section .card,
+.education-section .card-header,
+.education-section .card-body {
+    background-color: transparent !important;
+}
+
+/* --- dark glass card for Education --- */
+.education-section .edu-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    /* subtle glass, not bright */
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    backdrop-filter: blur(6px);
+    transition: border-color .17s ease, transform .17s ease, box-shadow .17s ease;
+}
+
+.education-section .edu-card:hover {
+    border-color: color-mix(in srgb, var(--accent) 28%, rgba(255, 255, 255, 0.10));
+    transform: translateY(-1px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .42);
+}
+
+/* --- meta text (concrete muted tone) --- */
+.education-section .text-muted,
+.education-section .edu-meta {
+    padding: 0;
+    text-align: left;
+    color: #a1a1aa !important;
+}
+
+.education-section .edu-meta li {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* --- degree badge --- */
+.education-section .badge-accent {
+    background: linear-gradient(135deg, var(--accent), #60a5fa);
+    color: #0b0b0f;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-weight: 600;
+}
+
+.edu-link {
+    box-decoration-break: none;
+}
+
+/* ===== Coursework collapsible ===== */
+
+/* card shell for coursework lists */
+.education-section .cw-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* header/toggle */
+.education-section .cw-header {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+/* important: clear light button background */
+.education-section .cw-toggle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: transparent !important;
+    border: 0 !important;
+    color: rgba(230, 228, 255, 0.9);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-decoration: none !important;
+    transition: background .15s ease, color .15s ease;
+}
+
+.education-section .cw-toggle:hover,
+.education-section .cw-toggle:focus-visible {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    outline: none;
+}
+
+/* caret */
+.education-section .cw-chevron {
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+
+    transition: transform .2s ease;
+}
+
+.education-section .cw-chevron::before {
+    content: "▾";
+    font-size: 16px;
+    line-height: 1;
+}
+
+.education-section .cw-chevron.open {
+    transform: rotate(180deg);
+}
+
+/* count pill */
+.education-section .cw-count {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* body + list */
+.education-section .cw-body {
+    padding: 12px 14px 14px;
+}
+
+.education-section .cw-list {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.88);
+    column-gap: 24px;
+    columns: 1;
+    /* valid default */
+}
+
+.education-section .cw-list li {
+    margin: 4px 0;
+}
+
+/* responsive column counts */
+@media (min-width: 576px) {
+    .education-section .cw-list {
+        columns: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .education-section .cw-list {
+        columns: 3;
+    }
+}
+
+/* Pretty external link (accent underline + icon friendly) */
+.ext-link {
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    /* space between icon and text */
+    color: #c95bf5;
+    /* your accent (override default blue) */
+    text-decoration: none;
+    /* we’ll draw our own underline */
+    position: relative;
+    padding-bottom: 2px;
+    /* room for underline */
+    transition: color .15s ease;
+}
+
+/* custom animated underline */
+.ext-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+            rgba(201, 91, 245, .25),
+            rgba(201, 91, 245, .9),
+            rgba(201, 91, 245, .25));
+    transform: scaleX(.55);
+    transform-origin: left;
+    transition: transform .2s ease, opacity .2s ease;
+    opacity: .9;
+}
+
+.ext-link:hover,
+.ext-link:focus-visible {
+    color: #e8c6ff;
+    /* lighter on hover/focus */
+    outline: none;
+}
+
+.ext-link:hover::after,
+.ext-link:focus-visible::after {
+    transform: scaleX(1);
+}
+
+/* keep visited links same accent (avoid browser purple) */
+.ext-link:visited {
+    color: #c95bf5;
+}
+
+/* make inline SVG/React-icons align nicely */
+.ext-link svg {
+    width: 18px;
+    height: 18px;
+    margin-top: -1px;
+    /* optical align with text */
+}

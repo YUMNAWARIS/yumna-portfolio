@@ -4,6 +4,7 @@ import Particle from "../Particle";
 import IntroSection from "./components/intro";
 import ProfileBodyNavButtons from "./components/profile";
 import ResumeNew from "../Resume/ResumeNew";
+import EducationSection from "./components/education";
 
 function About() {
   const [tab, setTab] = useState('education')
@@ -23,6 +24,12 @@ function About() {
           {tab === 'resume' && (
             <div>
               <ResumeNew />
+            </div>
+          )}
+
+          {tab === 'education' && (
+            <div>
+              <EducationSection />
             </div>
           )}
 

@@ -54,49 +54,6 @@ export default function ProfileBodyNavButtons({
                 ))}
             </Row>
 
-            {/* MOBILE: active pill + ellipsis */}
-            <div className="profile-navbar profile-mobile">
-                <Button
-                    type="button"
-                    variant="outline-light"
-                    className="profile-btn is-active"
-                    onClick={() => clickItem(current.key)}
-                    aria-label={`Current: ${current.label}`}
-                >
-                    <current.Icon />
-                    <span className="profile-label">{current.label}</span>
-                </Button>
-
-                <Button
-                    type="button"
-                    variant="outline-light"
-                    className={`profile-btn profile-more ${open ? "is-open" : ""}`}
-                    aria-expanded={open}
-                    aria-haspopup="menu"
-                    onClick={() => setOpen(!open)}
-                >
-                    <Ico.Ellipsis />
-                </Button>
-
-                {open && (
-                    <>
-                        <div className="profile-backdrop" onClick={() => setOpen(false)} />
-                        <div className="profile-menu" role="menu">
-                            {items.map(({ key, label, Icon }) => (
-                                <button
-                                    key={key}
-                                    type="button"
-                                    className={`profile-menu-item ${active === key ? "is-active" : ""}`}
-                                    onClick={() => clickItem(key)}
-                                >
-                                    <Icon />
-                                    <span>{label}</span>
-                                </button>
-                            ))}
-                        </div>
-                    </>
-                )}
-            </div>
         </section>
     );
 }
