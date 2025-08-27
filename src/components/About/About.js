@@ -5,6 +5,7 @@ import IntroSection from "./components/intro";
 import ProfileBodyNavButtons from "./components/profile";
 import ResumeNew from "../Resume/ResumeNew";
 import EducationSection from "./components/education";
+import ExperienceSection from "./components/work";
 
 function About() {
   const [tab, setTab] = useState('education')
@@ -33,7 +34,11 @@ function About() {
             </div>
           )}
 
-
+          {tab === 'experience' && (
+            <div>
+              <ExperienceSection />
+            </div>
+          )}
 
 
         </Row>

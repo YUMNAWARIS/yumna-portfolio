@@ -23,7 +23,6 @@ export default function ProfileBodyNavButtons({
     const items = [
         { key: "experience", label: "Work Experience", Icon: Ico.Brief },
         { key: "education", label: "Education", Icon: Ico.Cap },
-        { key: "achievements", label: "Achievements", Icon: Ico.Trophy },
         { key: "resume", label: "Resume", Icon: Ico.File },
     ];
 

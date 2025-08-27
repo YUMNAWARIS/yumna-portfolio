@@ -1,0 +1,155 @@
+/* ========= WORK EXPERIENCE ========= */
+
+/* Kill any centering Bootstrap adds in this section */
+.experience-section .text-center {
+    text-align: left !important;
+}
+
+/* Headings + subtitle */
+.experience-section h2 {
+    color: #e5e7eb;
+    /* light gray */
+    letter-spacing: .3px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.experience-section p {
+    color: #a1a1aa;
+    /* muted gray */
+    text-align: left;
+}
+
+/* Reset Bootstrap card whites inside this section */
+.experience-section .card,
+.experience-section .card-header,
+.experience-section .card-body {
+    background-color: transparent !important;
+}
+
+/* Main card (dark glass) */
+.exp-card {
+    background: rgba(10, 12, 22, 0.55) !important;
+    /* deep glass */
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    backdrop-filter: blur(6px);
+    color: #e5e7eb;
+    transition: border-color .17s ease, transform .17s ease, box-shadow .17s ease;
+}
+
+.exp-card:hover {
+    border-color: rgba(201, 91, 245, .45);
+    /* #c95bf5 accent */
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .42);
+    transform: translateY(-1px);
+}
+
+.exp-card .card-body {
+    padding: 20px;
+}
+
+/* Company + title badge */
+.exp-card h3 {
+    margin: 0 0 4px;
+    color: #e5e7eb;
+    font-weight: 700;
+    text-align: left;
+}
+
+.badge-accent {
+    background: linear-gradient(135deg, #c95bf5, #60a5fa);
+    color: #0b0b0f;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-weight: 600;
+}
+
+/* Dates / location */
+.exp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: #a1a1aa;
+    margin: 8px 0 12px;
+}
+
+.exp-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Summary paragraph */
+.exp-card>.card-body>p {
+    color: #d1d5db;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Bullets (left aligned) */
+.exp-list {
+    margin: 8px 0 10px;
+    padding-left: 1.2rem;
+    list-style: disc;
+    color: #e5e7eb;
+    text-align: left;
+}
+
+.exp-list li {
+    margin-bottom: 8px;
+}
+
+/* Stack chips */
+.exp-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.exp-stack .chip {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    color: #e5e7eb;
+    font-size: .93rem;
+}
+
+/* Links */
+.exp-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.exp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #e5e7eb;
+    text-decoration: none;
+    border-bottom: 1px dashed #c95bf5;
+    transition: color .15s ease, border-color .15s ease;
+}
+
+.exp-link:hover,
+.exp-link:focus-visible {
+    color: #c95bf5;
+    border-color: #c95bf5;
+    outline: none;
+}
+
+/* Responsive touch-ups */
+@media (max-width: 767px) {
+    .exp-card .card-body {
+        padding: 16px;
+    }
+
+    .exp-list li {
+        margin-bottom: 6px;
+    }
+}

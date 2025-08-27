@@ -8,14 +8,6 @@ export default function EducationSection() {
     return (
         <section id="education" className="education-section py-5">
             <Container>
-                <Row className="justify-content-center mb-4">
-                    <Col lg={8} className="text-center">
-                        <h2 className="mb-2">Education</h2>
-                        <p className="text-muted">
-                            Formal education and selected coursework from my bachelor’s.
-                        </p>
-                    </Col>
-                </Row>
 
                 <Row className="g-4">
                     {EDUCATION.map((ed, idx) => (
