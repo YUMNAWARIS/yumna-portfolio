@@ -1,0 +1,14 @@
+# Core Python packages
+numpy
+pandas
+scikit-learn
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Jupyter notebook support
+ipykernel==6.25.2
+
+kagglehub
