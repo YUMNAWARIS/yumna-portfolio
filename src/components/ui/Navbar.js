@@ -11,6 +11,8 @@ import {
   AiOutlineUser,
   AiOutlineSketch,
 } from "react-icons/ai";
+import '../../styles/nav.css';
+
 
 import { CgFileDocument } from "react-icons/cg";
 
