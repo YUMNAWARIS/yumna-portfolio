@@ -16,7 +16,6 @@ export default function ExperienceSection() {
                                         <h3 className="mb-0">{job.company}</h3>
                                         <Badge bg="" className="badge-accent">{job.title}</Badge>
                                     </div>
-
                                     <div className="exp-meta">
                                         <span><FiCalendar aria-hidden="true" /> {job.period} </span>
                                         {job.location && <span><FiMapPin aria-hidden="true" /> {job.location} </span>}
