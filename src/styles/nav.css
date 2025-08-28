@@ -1,4 +1,5 @@
-#profile-logo {
+/* Prefer class to avoid ID specificity traps */
+.profile-logo {
     width: 60px;
     height: 60px;
     cursor: pointer;

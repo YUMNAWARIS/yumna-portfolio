@@ -73,18 +73,10 @@
     gap: 10px;
 }
 
-.chip {
-    padding: 8px 12px;
-    background: var(--chip-bg);
-    border: 1px solid var(--chip-br);
-    border-radius: 999px;
-    font-size: 0.86rem;
-    color: var(--medium-mute);
-    backdrop-filter: blur(2px);
-}
+/* use global .chip */
 
 .intro-art img {
-    width: 400px !important;
+    width: min(400px, 100%) !important;
     height: auto !important;
     filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
 }
@@ -100,4 +92,10 @@
     }
 
     /* image on top for mobile */
+}
+
+@media (max-width: 600px) {
+    .intro-wrap {
+        padding: 0 var(--space-4);
+    }
 }

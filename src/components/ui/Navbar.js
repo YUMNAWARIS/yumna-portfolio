@@ -61,7 +61,7 @@ function NavBar() {
             alt="Profile logo"
             style={{ width: 60, height: 60, cursor: "pointer" }}
             decoding="async"
-            className="me-2"
+            className="me-2 profile-logo"
           />
         </Navbar.Brand>
 

@@ -3,14 +3,14 @@
     margin-top: 30px !important;
 }
 .certs-section h2 {
-    color: #e5e7eb;
+    color: var(--text);
     letter-spacing: .3px;
     margin-bottom: 6px;
     text-align: left;
 }
 
 .certs-sub {
-    color: #a1a1aa;
+    color: var(--muted);
     text-align: left;
     margin-bottom: 14px;
 }
@@ -26,24 +26,23 @@
 .cf-pill {
     padding: 8px 12px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.04);
-    color: #e5e7eb;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    color: var(--text);
     cursor: pointer;
     transition: background .15s ease, color .15s ease, transform .15s ease, border-color .15s ease;
 }
 
 .cf-pill:hover,
 .cf-pill:focus-visible {
-    background: rgba(201, 91, 245, 0.15);
-    /* #c95bf5 */
-    border-color: rgba(201, 91, 245, 0.45);
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
     outline: none;
     transform: translateY(-1px);
 }
 
 .cf-pill.active {
-    background: linear-gradient(135deg, #c95bf5, #60a5fa);
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
     color: #0b0b0f;
     border-color: transparent;
 }
@@ -57,17 +56,17 @@
 
 /* Card */
 .cert-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
     border-radius: 14px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, .25);
+    box-shadow: var(--card-shadow);
     backdrop-filter: blur(6px);
-    color: #e5e7eb;
+    color: var(--text);
     transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
 }
 
 .cert-card:hover {
-    border-color: rgba(201, 91, 245, .45);
+    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
     box-shadow: 0 14px 36px rgba(0, 0, 0, .42);
     transform: translateY(-1px);
 }
@@ -89,7 +88,7 @@
     height: 28px;
     display: grid;
     place-items: center;
-    color: #e5e7eb;
+    color: var(--text);
 }
 
 .cert-title {
@@ -102,7 +101,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    color: #a1a1aa;
+    color: var(--muted);
     margin: 6px 0 10px;
 }
 
@@ -122,14 +121,7 @@
     gap: 8px;
 }
 
-.chip {
-    padding: 6px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.04);
-    color: #e5e7eb;
-    font-size: .93rem;
-}
+/* use global .chip */
 
 /* Icon actions (Verify / Copy) */
 .cert-actions {
@@ -138,23 +130,4 @@
     margin-top: 8px;
 }
 
-.icon-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #c95bf5;
-    background: transparent;
-    color: #e5e7eb;
-    text-decoration: none;
-    transition: transform .15s ease, background .15s ease, border-color .15s ease;
-}
-
-.icon-btn:hover,
-.icon-btn:focus-visible {
-    transform: translateY(-1px);
-    background: rgba(201, 91, 245, 0.15);
-    outline: none;
-}
+/* use global .icon-btn */

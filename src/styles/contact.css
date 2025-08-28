@@ -98,27 +98,4 @@
 }
 
 /* Icon-only button (works for <a> and <button>) */
-.icon-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--accent);
-    background: transparent;
-    color: var(--text);
-    text-decoration: none;
-    transition: transform .15s ease, background .15s ease, border-color .15s ease;
-}
-
-.icon-btn:hover,
-.icon-btn:focus-visible {
-    transform: translateY(-1px);
-    background: color-mix(in srgb, var(--accent) 15%, transparent);
-    outline: none;
-}
-
-.icon-btn:active {
-    transform: translateY(0);
-}
+/* use global .icon-btn */
