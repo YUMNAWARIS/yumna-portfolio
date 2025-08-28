@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="https://yumnawaris.github.io/yumna-portfolio/">
+    <Router basename={process.env.PUBLIC_URL}>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
