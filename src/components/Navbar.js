@@ -85,7 +85,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -96,7 +96,7 @@ function NavBar() {
                 />{" "}
                 Replications
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -108,7 +108,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 href="#"
                 target="_blank"
@@ -116,7 +116,7 @@ function NavBar() {
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Writings
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
           </Nav>
         </Navbar.Collapse>
