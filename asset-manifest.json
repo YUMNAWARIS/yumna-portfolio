@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/yumna-portfolio/static/css/main.499aacd2.css",
+    "main.js": "/yumna-portfolio/static/js/main.88c687eb.js",
+    "static/js/415.dbe124d1.chunk.js": "/yumna-portfolio/static/js/415.dbe124d1.chunk.js",
+    "static/js/787.46753f41.chunk.js": "/yumna-portfolio/static/js/787.46753f41.chunk.js",
+    "static/media/profile.png": "/yumna-portfolio/static/media/profile.522fef0da6a351e9ffa3.png",
+    "static/media/about.png": "/yumna-portfolio/static/media/about.7f1239111b58abcdd341.png",
+    "static/media/logo.png": "/yumna-portfolio/static/media/logo.812dd61bd84fc8b7fcf4.png",
+    "static/media/home-main.png": "/yumna-portfolio/static/media/home-main.c6381574129180d465ec.png",
+    "static/media/home-bg.jpg": "/yumna-portfolio/static/media/home-bg.bdeb49f4cfd4ca3b1e67.jpg",
+    "static/media/leaf.png": "/yumna-portfolio/static/media/leaf.ff2616f664c8c0ceab91.png",
+    "static/media/emotion.png": "/yumna-portfolio/static/media/emotion.eabfc16e7a146ab15778.png",
+    "static/media/suicide.png": "/yumna-portfolio/static/media/suicide.9c86cd7138a398c45fa5.png",
+    "static/media/codeEditor.png": "/yumna-portfolio/static/media/codeEditor.1b585492490c8c1cace9.png",
+    "static/media/blog.png": "/yumna-portfolio/static/media/blog.fb8ab7f271a937d5fc01.png",
+    "static/media/chatify.png": "/yumna-portfolio/static/media/chatify.7206044e0b5cdad44726.png",
+    "static/media/yumnawaris-resume.pdf": "/yumna-portfolio/static/media/yumnawaris-resume.782f9f7216203bfa2b23.pdf",
+    "index.html": "/yumna-portfolio/index.html",
+    "static/media/pre.svg": "/yumna-portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "main.499aacd2.css.map": "/yumna-portfolio/static/css/main.499aacd2.css.map",
+    "main.88c687eb.js.map": "/yumna-portfolio/static/js/main.88c687eb.js.map",
+    "415.dbe124d1.chunk.js.map": "/yumna-portfolio/static/js/415.dbe124d1.chunk.js.map",
+    "787.46753f41.chunk.js.map": "/yumna-portfolio/static/js/787.46753f41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.499aacd2.css",
+    "static/js/main.88c687eb.js"
+  ]
+}
