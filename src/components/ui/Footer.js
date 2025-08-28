@@ -2,10 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
-import { FaDiscourse, FaKaggle, FaLinkedinIn } from "react-icons/fa";
+import { FaKaggle, FaLinkedinIn } from "react-icons/fa";
+import "../../styles/footer.css";
 
 function Footer() {
   let date = new Date();

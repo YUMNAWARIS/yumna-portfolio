@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../assets/home-main.png";
 import Particle from "../components/ui/Particle";
-import Home2 from "../components/ui/HomeHero2";
 import Type from "../components/ui/Type";
+import myImg from "../assets/profile.png";
+import ContactSection from "../pages/Contact";
 import "../styles/home.css";
 
 function Home() {
@@ -22,7 +23,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M 
+                I'M
                 <strong className="main-name"> Yumna Waris </strong>
               </h1>
 
@@ -40,9 +41,38 @@ function Home() {
               />
             </Col>
           </Row>
+          <Row>
+            <Col md={4} className="myAvtar d-flex justify-content-center">
+              <img
+                src={myImg}
+                alt="Yumna Waris headshot"
+                className="avatar img-fluid"
+                loading="eager"
+                decoding="async"
+              />
+            </Col>
+            <Col md={1}></Col>
+            <Col md={7} className="home-about-description">
+
+              <p className="home-about-body">
+                I’m <strong>Yumna Waris</strong>, a <strong>Software Engineer II</strong> at
+                <strong className="purple"> PayEngine</strong>, where we build tools that help
+                <i><strong className="purple"> vertical SaaS companies </strong></i> manage their
+                merchants and processor relationships more effectively.
+                <br /> <br />
+
+                Alongside my role, I’m studying <i><strong className="purple">machine learning</strong></i> and
+                <i><strong className="purple"> AI</strong></i>, building personal projects and
+                replicating published papers to deepen my understanding.
+                <br />
+                I’m exploring <i><strong className="purple">Master’s opportunities in AI/ML Data-intensive systems </strong></i>
+              </p>
+            </Col>
+          </Row>
+
+          <ContactSection />
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }

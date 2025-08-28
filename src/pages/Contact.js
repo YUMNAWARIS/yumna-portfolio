@@ -4,6 +4,7 @@ import { FiMail, FiPhone, FiGithub, FiLinkedin, FiTwitter, FiGlobe, FiCheck, FiC
 import { SiMedium, SiKaggle, SiInstagram, SiFacebook, SiCoursera, SiUdemy } from "react-icons/si";
 import "../styles/contact.css"
 
+
 export default function ContactSection() {
     const [copied, setCopied] = useState(null);
     const email = "yumnaahwaris@gmail.com";
