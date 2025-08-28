@@ -2,7 +2,7 @@
   "name": "yumna-portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://yumnawaris.github.io/yumna-portfolio",
+  "homepage": "https://yumnawaris.github.io/yumna-portfolio/",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
