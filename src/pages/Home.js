@@ -4,6 +4,7 @@ import homeLogo from "../assets/home-main.png";
 import Particle from "../components/ui/Particle";
 import Home2 from "../components/ui/HomeHero2";
 import Type from "../components/ui/Type";
+import "../styles/home.css";
 
 function Home() {
   return (
