@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yumna-portfolio/static/css/main.499aacd2.css",
-    "main.js": "/yumna-portfolio/static/js/main.4b6ca8f2.js",
+    "main.js": "/yumna-portfolio/static/js/main.63a95791.js",
     "static/js/415.dbe124d1.chunk.js": "/yumna-portfolio/static/js/415.dbe124d1.chunk.js",
     "static/js/787.46753f41.chunk.js": "/yumna-portfolio/static/js/787.46753f41.chunk.js",
     "static/media/profile.png": "/yumna-portfolio/static/media/profile.522fef0da6a351e9ffa3.png",
@@ -19,12 +19,12 @@
     "static/media/pre.svg": "/yumna-portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/yumna-portfolio/index.html",
     "main.499aacd2.css.map": "/yumna-portfolio/static/css/main.499aacd2.css.map",
-    "main.4b6ca8f2.js.map": "/yumna-portfolio/static/js/main.4b6ca8f2.js.map",
+    "main.63a95791.js.map": "/yumna-portfolio/static/js/main.63a95791.js.map",
     "415.dbe124d1.chunk.js.map": "/yumna-portfolio/static/js/415.dbe124d1.chunk.js.map",
     "787.46753f41.chunk.js.map": "/yumna-portfolio/static/js/787.46753f41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.499aacd2.css",
-    "static/js/main.4b6ca8f2.js"
+    "static/js/main.63a95791.js"
   ]
 }
