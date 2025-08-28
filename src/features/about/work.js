@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import { FiBriefcase, FiMapPin, FiCalendar, FiExternalLink } from "react-icons/fi";
-import { EXPERIENCE } from "./data/work";
-import './work.css'
+import { EXPERIENCE } from "../../data/work";
+import '../../styles/work.css'
 
 export default function ExperienceSection() {
     return (

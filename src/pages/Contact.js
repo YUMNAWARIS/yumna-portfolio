@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FiMail, FiPhone, FiGithub, FiLinkedin, FiTwitter, FiGlobe, FiCheck, FiCopy, FiSend, FiX } from "react-icons/fi";
 import { SiMedium, SiKaggle, SiInstagram, SiFacebook, SiCoursera, SiUdemy } from "react-icons/si";
-import "./contact.css"
+import "../styles/contact.css"
 
 export default function ContactSection() {
     const [copied, setCopied] = useState(null);

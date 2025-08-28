@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Container, Row, Col, Card, Badge, Button, Collapse } from "react-bootstrap";
 import { FiCalendar, FiMapPin, FiBookOpen, FiAward, FiExternalLink } from "react-icons/fi";
-import { EDUCATION } from "./data/education";
-import './education.css'
+import { EDUCATION } from "../../data/education";
+import '../../styles/education.css'
 
 export default function EducationSection() {
     return (

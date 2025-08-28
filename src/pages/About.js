@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
-import IntroSection from "./components/intro";
-import ProfileBodyNavButtons from "./components/profile";
-import ResumeNew from "../Resume/ResumeNew";
-import EducationSection from "./components/education";
-import ExperienceSection from "./components/work";
+import Particle from "../components/ui/Particle";
+import IntroSection from "../features/about/intro";
+import ProfileBodyNavButtons from "../features/about/profile";
+import ResumeNew from "./Resume";
+import EducationSection from "../features/about/education";
+import ExperienceSection from "../features/about/work";
 
 function About() {
   const [tab, setTab] = useState('education')

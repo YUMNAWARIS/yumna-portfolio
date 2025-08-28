@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
-import './profile.css'
+import '../../styles/profile.css'
 /* tiny inline icons (no deps) */
 const Ico = {
     Cap: (p) => <svg viewBox="0 0 24 24" className={`profile-ico ${p.className || ""}`}><g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M3 10l9-5 9 5-9 5-9-5z" /><path d="M7 12v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-5" /></g></svg>,

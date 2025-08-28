@@ -1,5 +1,5 @@
-import './intro.css'
-import laptopImg from "../../../Assets/about.png";
+import '../../styles/intro.css'
+import laptopImg from "../../assets/about.png";
 
 
 // IntroSection.jsx

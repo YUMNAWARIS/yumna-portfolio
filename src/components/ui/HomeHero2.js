@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/profile.png";
-import ContactSection from "../Contact/ContactSection";
+import myImg from "../../assets/profile.png";
+import ContactSection from "../../pages/Contact";
 
 function Home2() {
   return (

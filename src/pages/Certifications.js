@@ -2,8 +2,8 @@ import { useMemo, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { SiCoursera, SiUdemy } from "react-icons/si";
 import { FiAward, FiExternalLink, FiCopy, FiCheck, FiCalendar } from "react-icons/fi";
-import { CERTS } from "./cert-data";
-import './cert.css'
+import { CERTS } from "../data/certifications";
+import '../styles/cert.css'
 
 const ACCENT = "#c95bf5";   // brand purple
 
