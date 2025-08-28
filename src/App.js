@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Footer from "./components/ui/Footer";
-import Resume from "./pages/Resume";
 import {
   BrowserRouter as Router,
   Route,
@@ -14,7 +13,7 @@ import {
 } from "react-router-dom";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import "./styles/globals.css";
-import "./styles/App.css";
+import "./styles/app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CertificationsSection from "./pages/Certifications";
 
@@ -38,9 +37,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/certifications" element={<CertificationsSection />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/profile" element={<About />} />
+          <Route path="/certs" element={<CertificationsSection />} />
+          <Route path="/writings" element={<CertificationsSection />} />
+          <Route path="/replications" element={<CertificationsSection />} />
           <Route path="*" element={<Navigate to="/home"/>} />
         </Routes>
         <Footer />

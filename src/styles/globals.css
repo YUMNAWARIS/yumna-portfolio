@@ -802,3 +802,20 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* Layout guards to prevent horizontal scroll */
+html, body, #root, .App {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Make media responsive */
+img, svg, canvas, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure grid wrappers don't overflow */
+.container, .container-fluid, .row, [class*="col-"] {
+  max-width: 100%;
+}

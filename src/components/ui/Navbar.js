@@ -3,9 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
 
@@ -18,33 +16,52 @@ import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+
+  const baseUrl = process.env.PUBLIC_URL;
+  const items = [
+    {
+      label: "Profile",
+      icon: <AiOutlineUser className="me-2" />,
+      to: "/profile"
+    },
+    {
+      label: "Projects",
+      icon: <AiOutlineFundProjectionScreen className="me-2" />,
+      to: "/projects"
+    },
+    {
+      label: "Certifications",
+      icon: <CgFileDocument className="me-2" />,
+      to: "/certs"
+    },
+    {
+      label: "Writings",
+      icon: <ImBlog className="me-2" />,
+      to: "/writings"
+    },
+    {
+      label: "Replications",
+      icon: <AiOutlineSketch className="me-2" />,
+      to: "/replications"
     }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
+  ]
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={"navbar"}
     >
       <Container>
-        <Navbar.Brand href={process.env.PUBLIC_URL+"/home"} className="d-flex align-items-center navbar-brand">
+        <Navbar.Brand href={baseUrl + "/home"} className="d-flex align-items-center navbar-brand">
           <img
             src={logo}
-            alt="Yumna Waris logo"
+            alt="Profile logo"
             style={{ width: 60, height: 60, cursor: "pointer" }}
-
             decoding="async"
+            className="me-2"
           />
         </Navbar.Brand>
 
@@ -54,69 +71,23 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
         </Navbar.Toggle>
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#about">
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Profile & Journey
-              </Nav.Link>
-            </Nav.Item>
+            {items.map((item, index) => (
+              <Nav.Item key={index}>
+                <Nav.Link
+                  as={Link}
+                  to={item.to}
+                  onClick={() => updateExpanded(false)}
+                >
+                  {item.icon} {item.label}
+                </Nav.Link>
+              </Nav.Item>
+            ))}
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineSketch
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Replications
-              </Nav.Link>
-            </Nav.Item> */}
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/certifications"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Certifications
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Writings
-              </Nav.Link>
-            </Nav.Item> */}
 
           </Nav>
         </Navbar.Collapse>
