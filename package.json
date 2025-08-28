@@ -1,7 +1,7 @@
 {
   "name": "yumna-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://yumnawaris.github.io/yumna-portfolio",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
