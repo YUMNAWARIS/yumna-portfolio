@@ -38,7 +38,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/home" className="d-flex align-items-center navbar-brand">
+        <Navbar.Brand href={process.env.PUBLIC_URL+"/home"} className="d-flex align-items-center navbar-brand">
           <img
             src={logo}
             alt="Yumna Waris logo"
